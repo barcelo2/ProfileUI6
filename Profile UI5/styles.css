@@ -1,0 +1,182 @@
+:root {
+  --color-wine: #822659;
+  --color-darkgrey: #575656;
+  --color-grey: #bfbfbf;
+  --color-lightgrey: #707070;
+  --color-header: #323335;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+body {
+  font-size: 1rem;
+  font-family: "raleway", sans-serif;
+  background-color: var(--color-grey);
+}
+
+.user-container {
+  margin: 0 auto;
+  background-image: url(barcelona.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 50%;
+  background-repeat: no-repeat;
+}
+
+.box {
+  width: 400px;
+  height: 350px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 10px 10px 23px 9px rgba(0, 0, 0, 0.41);
+}
+
+.overlay {
+  background-color: #fff;
+  height: 150%;
+  width: 0;
+  z-index: 1;
+  padding-right: 1.31rem;
+}
+
+#overlay-content {
+  position: relative;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  margin-top: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  visibility: hidden;
+}
+#overlay-content a {
+  padding: 1rem;
+  text-decoration: none;
+  color: var(--color-darkgrey);
+  display: block;
+}
+
+#overlay-content a:hover {
+  background-image: linear-gradient(to right, #c72c82, #822659);
+  color: #fff;
+}
+.overlay #closebtn {
+  position: absolute;
+  top: 5px;
+  padding-right: 1.31rem;
+  font-size: 30px;
+  text-decoration: none;
+  color: var(--color-darkgrey);
+  visibility: hidden;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.93rem 1.31rem;
+}
+.fab {
+  padding: 0.5rem;
+}
+
+.user img {
+  width: 200px;
+  height: auto;
+  position: absolute;
+  left: 50%;
+  bottom: 40%;
+  transform: translate(-50%, -50%);
+}
+
+.user-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  top: 48%;
+  visibility: visible;
+}
+
+h1 {
+  color: var(--color-header);
+  padding-top: 0.76rem;
+  padding-bottom: 0.5rem;
+}
+
+p:first-child {
+  font-size: 0.62rem;
+  color: var(--color-lightgrey);
+}
+
+p:last-child {
+  color: var(--color-wine);
+  padding-top: 0.93rem;
+  font-size: 0.9rem;
+}
+
+.user-stats {
+  visibility: visible;
+}
+
+.user-info {
+  font-family: "lato", sans-serif;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 3.5rem;
+  font-weight: bold;
+  color: var(--color-darkgrey);
+  top: 210px;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+
+.user-title {
+  font-weight: 100;
+  padding: 0 2.5rem;
+  margin-top: 0.37rem;
+  color: var(--color-grey);
+}
+
+.btn-viewprofile a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.block {
+  display: block;
+  width: 100%;
+  border: none;
+  background-image: linear-gradient(to right, #c72c82, #822659);
+  color: #fff;
+  padding: 14px 30px;
+  cursor: pointer;
+  text-align: center;
+  position: relative;
+  top: 220px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1rem;
+  font-weight: 100px;
+}
